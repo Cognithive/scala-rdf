@@ -1,0 +1,7 @@
+.bloop
+.DS_STORE
+.metals
+project/*
+!project/build.properties
+!project/plugins.sbt
+target
