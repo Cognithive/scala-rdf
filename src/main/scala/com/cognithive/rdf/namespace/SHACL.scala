@@ -22,12 +22,12 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val iri = baseUri.concat("IRI")
     lazy val iriOrLiteral = baseUri.concat("IRIOrLiteral")
     lazy val literal = baseUri.concat("Literal")
-    lazy val nodeKind = baseUri.concat("NodeKind")
+    lazy val nodeKindClass = baseUri.concat("NodeKind")
     // Results vocabulary
     //// Classes
     lazy val abstractResult = baseUri.concat("AbstractResult")
     lazy val info = baseUri.concat("Info")
-    lazy val severity = baseUri.concat("Severity")
+    lazy val severityClass = baseUri.concat("Severity")
     lazy val validationReport = baseUri.concat("ValidationReport")
     lazy val validationResult = baseUri.concat("ValidationResult")
     lazy val violation = baseUri.concat("Violation")
@@ -71,7 +71,7 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val constraintComponent = baseUri.concat("ConstraintComponent")
     lazy val sparqlAskValidator = baseUri.concat("SPARQLAskValidator")
     lazy val sparqlSelectValidator = baseUri.concat("SPARQLSelectValidator")
-    lazy val validator = baseUri.concat("Validator")
+    lazy val validatorClass = baseUri.concat("Validator")
     //// Properties
     lazy val nodeValidator = baseUri.concat("nodeValidator")
     lazy val propertyValidator = baseUri.concat("propertyValidator")
@@ -214,10 +214,10 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     //// Classes
     lazy val sparqlTarget = baseUri.concat("SPARQLTarget")
     lazy val sparqlTargetType = baseUri.concat("SPARQLTargetType")
-    lazy val targetClass = baseUri.concat("Target")
+    lazy val target = baseUri.concat("Target")
     lazy val targetType = baseUri.concat("TargetType")
     //// Properties
-    lazy val target = baseUri.concat("target")
+    lazy val targetProperty = baseUri.concat("target")
     // Functions Vocabulary
     //// Classes
     lazy val function = baseUri.concat("Function")
@@ -226,7 +226,7 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val returnType = baseUri.concat("returnType")
     // Result Annotations
     //// Classes
-    lazy val resultAnnotation = baseUri.concat("ResultAnnotation")
+    lazy val resultAnnotationClass = baseUri.concat("ResultAnnotation")
     //// Properties
     lazy val annotationProperty = baseUri.concat("annotationProperty")
     lazy val annotationValue = baseUri.concat("annotationValue")
@@ -234,7 +234,7 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val resultAnnotation = baseUri.concat("resultAnnotation")
     // Node Expressions
     //// Properties
-    lazy val this = baseUri.concat("this")
+    lazy val `this` = baseUri.concat("this")
     lazy val filterShape = baseUri.concat("filterShape")
     lazy val nodes = baseUri.concat("nodes")
     lazy val intersection = baseUri.concat("intersection")
@@ -247,7 +247,7 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val expression = baseUri.concat("expression")
     // Rules
     //// Classes
-    lazy val rule = baseUri.concat("Rule")
+    lazy val ruleClass = baseUri.concat("Rule")
     lazy val sparqlRule = baseUri.concat("SPARQLRule")
     lazy val tripleRule = baseUri.concat("TripleRule")
     //// Properties
@@ -263,7 +263,7 @@ object SHACL extends Namespace("http://www.w3.org/ns/shacl#", "shacl") {
     lazy val jsConstraintComponent = baseUri.concat("JSConstraintComponent")
     lazy val jsExecutable = baseUri.concat("JSExecutable")
     lazy val jsFunction = baseUri.concat("JSFunction")
-    lazy val jsLibrary = baseUri.concat("JSLibrary")
+    lazy val jsLibraryClass = baseUri.concat("JSLibrary")
     lazy val jsRule = baseUri.concat("JSRule")
     lazy val jsTarget = baseUri.concat("JSTarget")
     lazy val jsTargetType = baseUri.concat("JSTargetType")
