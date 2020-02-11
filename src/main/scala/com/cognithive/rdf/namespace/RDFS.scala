@@ -1,21 +1,21 @@
 package com.cognithive.rdf.namespace
 
-object RDFS extends Namespace("http://www.w3.org/2000/01/rdf-schema#", "rdfs") {
+object RDFS extends Namespace(baseURI = "http://www.w3.org/2000/01/rdf-schema#", prefixLabel = "rdfs") {
     // Classes
-    lazy val `class`= baseUri.concat("Class")
-    lazy val container = baseUri.concat("Container")
-    lazy val containerMembershipProperty = baseUri.concat("ContainerMembershipProperty")
-    lazy val datatype = baseUri.concat("Datatype")
-    lazy val literal = baseUri.concat("Literal")
-    lazy val resource = baseUri.concat("Resource")
+    lazy val Class: String = baseURI.concat("Class")
+    lazy val Container: String = baseURI.concat("Container")
+    lazy val ContainerMembershipProperty: String = baseURI.concat("ContainerMembershipProperty")
+    lazy val Datatype: String = baseURI.concat("Datatype")
+    lazy val Literal: String = baseURI.concat("Literal")
+    lazy val Resource: String = baseURI.concat("Resource")
     // Properties
-    lazy val comment = baseUri.concat("comment")
-    lazy val domain = baseUri.concat("domain")
-    lazy val isDefinedBy = baseUri.concat("isDefinedBy")
-    lazy val label = baseUri.concat("label")
-    lazy val member = baseUri.concat("member")
-    lazy val range = baseUri.concat("range")
-    lazy val seeAlso = baseUri.concat("seeAlso")
-    lazy val subClassOf = baseUri.concat("subClassOf")
-    lazy val subPropertyOf = baseUri.concat("subPropertyOf")
+    lazy val comment: String = baseURI.concat("comment")
+    lazy val domain: String = baseURI.concat("domain")
+    lazy val isDefinedBy: String = baseURI.concat("isDefinedBy")
+    lazy val label: String = baseURI.concat("label")
+    lazy val member: String = baseURI.concat("member")
+    lazy val range: String = baseURI.concat("range")
+    lazy val seeAlso: String = baseURI.concat("seeAlso")
+    lazy val subClassOf: String = baseURI.concat("subClassOf")
+    lazy val subPropertyOf: String = baseURI.concat("subPropertyOf")
 }

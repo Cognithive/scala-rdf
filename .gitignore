@@ -1,5 +1,6 @@
 .bloop
 .DS_STORE
+.idea
 .metals
 project/*
 !project/build.properties

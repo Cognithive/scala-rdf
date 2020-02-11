@@ -1,17 +1,17 @@
 package com.cognithive.rdf.namespace
 
-object DCMIType extends Namespace("http://purl.org/dc/dcmitype/", "dcmitype") {
+object DCMIType extends Namespace(baseURI = "http://purl.org/dc/dcmitype/", prefixLabel = "dcmitype") {
     // Classes
-    lazy val collection = baseUri.concat("Collection")
-    lazy val dataset = baseUri.concat("Dataset")
-    lazy val event = baseUri.concat("Event")
-    lazy val image = baseUri.concat("Image")
-    lazy val interactiveResource = baseUri.concat("InteractiveResource")
-    lazy val movingImage = baseUri.concat("MovingImage")
-    lazy val physicalObject = baseUri.concat("PhysicalObject")
-    lazy val service = baseUri.concat("Service")
-    lazy val software = baseUri.concat("Software")
-    lazy val sound = baseUri.concat("Sound")
-    lazy val stillImage = baseUri.concat("StillImage")
-    lazy val text = baseUri.concat("Text")
+    lazy val Collection: String = baseURI.concat("Collection")
+    lazy val Dataset: String = baseURI.concat("Dataset")
+    lazy val Event: String = baseURI.concat("Event")
+    lazy val Image: String = baseURI.concat("Image")
+    lazy val InteractiveResource: String = baseURI.concat("InteractiveResource")
+    lazy val MovingImage: String = baseURI.concat("MovingImage")
+    lazy val PhysicalObject: String = baseURI.concat("PhysicalObject")
+    lazy val Service: String = baseURI.concat("Service")
+    lazy val Software: String = baseURI.concat("Software")
+    lazy val Sound: String = baseURI.concat("Sound")
+    lazy val StillImage: String = baseURI.concat("StillImage")
+    lazy val Text: String = baseURI.concat("Text")
 }

@@ -1,10 +1,10 @@
 package com.cognithive.rdf.namespace
 
-object DCAM extends Namespace("http://purl.org/dc/dcam/", "dcam") {
+object DCAM extends Namespace(baseURI = "http://purl.org/dc/dcam/", prefixLabel = "dcam") {
     // Classes
-    lazy val vocabularyEncodingScheme = baseUri.concat("VocabularyEncodingScheme")
+    lazy val VocabularyEncodingScheme: String = baseURI.concat("VocabularyEncodingScheme")
     // Properties
-    lazy val domainIncludes = baseUri.concat("domainIncludes")
-    lazy val memberOf = baseUri.concat("memberOf")
-    lazy val rangeIncludes = baseUri.concat("rangeIncludes")
+    lazy val domainIncludes: String = baseURI.concat("domainIncludes")
+    lazy val memberOf: String = baseURI.concat("memberOf")
+    lazy val rangeIncludes: String = baseURI.concat("rangeIncludes")
 }
